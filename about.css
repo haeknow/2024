@@ -10,7 +10,8 @@
 body {
     margin: 0;
     padding:0;
-    font-family: "pretendard", sans-serif;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
     font-size: 14px;
     font-weight: 300;
     line-height: 160%;
@@ -99,6 +100,8 @@ h3{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 16px;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
     /* margin-top: 16px; */
 }
 
@@ -109,6 +112,8 @@ h3{
     font-weight: 300;
     margin-left: 30px;
     margin-bottom: 16px;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
 }
 
 .body2{
@@ -116,6 +121,8 @@ h3{
     padding: 0;
     font-size: 14px;
     font-weight: 300;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
 
 }
 
@@ -126,6 +133,8 @@ h3{
     font-weight: 300;
     padding-right: 80px;
     line-height: 220%;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
 }
 
 .sub2 {
@@ -134,6 +143,8 @@ h3{
     font-size: 16px;
     font-weight: 600;
     width:75px;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
 }
 
 .sub3 {
@@ -142,6 +153,8 @@ h3{
     font-size: 14px;
     font-weight: 600;
     width:90px;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
 }
 
 .namecard-body-group{
@@ -337,18 +350,21 @@ h3{
         margin: 0px;
     }
 
+
     .longcard-container{
         /* box-shadow: 0 0 0 1px blue inset; */
+        position: relative;
         width: auto;
-        /* margin-left: 20px;
-        margin-right: 20px; */
+        left: 50%;
+        transform: translateX(-50%);
+        padding-left: 0px;
     }
 
     .longcard-group{
         width: auto;
         margin: 0px;
         padding: 0px;
-        /* box-shadow: 0 0 0 1px blue inset; */
+        /* box-shadow: 0 0 0 1px red inset; */
         margin-top: 40px;
         margin-bottom: 40px;
         
@@ -359,6 +375,7 @@ h3{
         width: auto;
         margin: 0px;
         padding: 0px;
+        margin-bottom: 16px;
     }
 
     .skill-group{

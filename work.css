@@ -101,6 +101,8 @@ main{
     align-items: center;
     font-weight: 700;
     font-size: 14px;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.4);
 }

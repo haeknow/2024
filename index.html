@@ -42,6 +42,11 @@
                 $('.thum-mob-mu').height(boxWidthMu*1);
             }
         });
+
+        $(document).ready(function(){
+            $('.toast-message').animate({bottom:'40px'},1000,'easeInOutBack');
+            $('.toast-message').delay(7000).animate({bottom:'-200px'},1000,'easeInOutBack');
+        });
             
     </script>
 
@@ -63,6 +68,11 @@
 
         *{
             /* box-shadow: 0 0 0 1px red inset; */
+            text-decoration: none;
+        }
+
+        a{
+            color: #000000;
             text-decoration: none;
         }
 
@@ -128,6 +138,8 @@
             font-weight: 600;
             font-size: 16px;
             margin-left: 20px;
+            font-family: pretendard, sans-serif;
+            font-style: normal;
         }
 
         .subTitle:hover{
@@ -161,6 +173,40 @@
             background-color:#ffffff;
             margin: 0px;
         }
+
+        .toast-message{
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            bottom:-200px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: pretendard, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            padding: 12px 16px 12px 16px;
+            height: 32px;
+            background-color: #ffffff;
+            color:#404040;
+            border-radius: 16px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.07);
+            z-index: 20;
+            
+        }
+
+        .icon{
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+
+        }
+
+.icon img{
+    /* border: solid 0.1px red; */
+    width: 100%;
+}
 
 
         @media all and (max-width: 1320px){
@@ -218,6 +264,11 @@
                 display: block;
             }
 
+            .toast-message{
+                min-width: 312px;
+                font-size: 12px;
+            }
+
 
 
         }
@@ -238,6 +289,11 @@
                 <a class = "subTitle-image" href = "https://www.behance.net/hwtv122310e3" id = "be"><img src = "image/behance.webp"></a> 
                 <a class = "subTitle-image" href = "https://www.instagram.com/haaeno/"><img src = "image/insta.png"></a>
             </div>
+        </div>
+
+        <div class = "toast-message">
+            <div class = "icon"><img src = "image/information.svg"></div>
+            작업물이 보이지 않는다면, 웹사이트 사이즈를 줄이거나 늘려보세요.
         </div>
 
         <main>
