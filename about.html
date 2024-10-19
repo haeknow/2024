@@ -1,0 +1,402 @@
+<html>
+    <head>
+        <title>2024 Enjoy Designer HAENO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="about.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="jquery.easing.min.js"></script>
+        <script>
+            (function(d) {
+              var config = {
+                kitId: 'okh1uhz',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+            
+            $(document).ready(function(){
+                $('main').animate({top:'160px',opacity:"100%"},500,'easeOutCubic');
+            
+            });
+                
+        </script>
+    </head>
+
+    <style>
+        body::-webkit-scrollbar {
+            width: 4px;  /* 스크롤바의 너비 */
+        }
+
+        body::-webkit-scrollbar-thumb {
+            height: 30%; /* 스크롤바의 길이 */
+            background: #ff4000; /* 스크롤바의 색상 */ 
+            border-radius: 10px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.15);  /*스크롤바 뒷 배경 색상*/
+        }
+
+
+        *{
+            /* box-shadow: 0 0 0 1px red inset; */
+            text-decoration: none;
+        }
+
+        a:visited{
+            color:black;
+        }
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: pretendard, sans-serif;
+            font-style: normal;
+        }
+
+        .logo {
+            position: relative;
+            width: auto;
+            height: 32px;
+            /* box-shadow: 0 0 0 1px red inset; */
+
+        }
+
+        .logo img {
+            height:100%;
+        }
+
+        .header-container{
+            /* box-shadow: 0 0 0 1px red inset; */
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 1320px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            z-index: 10;
+        }
+
+        #mob-logo{
+            display: none;
+        }
+
+        .navigator-title{
+            display: flex;
+            justify-content: end;
+            /* box-shadow: 0 0 0 1px red inset; */
+            width: 100%;
+            height: fit-content;
+            padding: 0;
+            margin-left: 20px;
+            margin-right: 0px;
+            padding-right: 20px;
+            border-right: solid 2px black;
+        }
+
+        .subTitle{
+            /* box-shadow: 0 0 0 1px red inset; */
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        .subTitle:hover{
+            color : #ff4000
+        }
+
+        .navigator{
+            display: flex;
+        }
+
+        .subTitle-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* box-shadow: 0 0 0 1px red inset; */
+            height: 24px;
+            width: 24px;
+            margin-left: 20px;
+        }
+
+        .subTitle-image img {
+            /* box-shadow: 0 0 0 1px red inset; */
+            width:100%;
+        }
+
+        #be img{
+            width:135%;
+        }
+
+
+        @media all and (max-width: 1320px){
+            *{
+                /* box-shadow: 0 0 0 1px blue inset; */
+                text-decoration: none;
+            }
+
+            .header-container{
+                width:100%;
+            }
+
+            .logo{
+                margin-left: 40px;
+            }
+
+            .navigator{
+                margin-right: 40px;
+            }
+
+        }
+
+        @media all and (max-width: 768px){
+            *{
+                /* box-shadow: 0 0 0 1px blue inset; */
+                text-decoration: none;
+            }
+            .header-container{
+                width:100%;
+            }
+
+            .logo{
+                margin-left: 20px;
+            }
+
+            .navigator{
+                margin-right: 20px;
+            }
+
+
+
+            .navigator-title{
+                justify-content:flex-start;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-right: 20px;
+                border-right: solid 0px black;
+            }
+
+            #pc-logo{
+                display: none;
+            }
+
+            #mob-logo{
+                display: block;
+            }
+
+
+
+        }
+</style>
+
+    <body>
+        <div class = "header-container">
+            <a class = "logo" href="index.html" id = "pc-logo"><img src = "image/logo.svg"></a>
+            <a class = "logo" href="index.html" id = "mob-logo"><img src = "image/mob-logo.svg"></a>
+
+            <div class = "navigator-title">
+                <a class = "subTitle" href = "about.html">ABOUT</a>
+                <a class = "subTitle" href = "work.html">WORK</a>
+            </div>
+
+            <div class = "navigator">
+                <a class = "subTitle-image" href = "https://www.behance.net/hwtv122310e3" id = "be"><img src = "image/behance.webp"></a> 
+                <a class = "subTitle-image" href = "https://www.instagram.com/haaeno/"><img src = "image/insta.png"></a>
+            </div>
+        </div>
+
+        <main>
+            <div class = "introduce-container">
+                <div class = "introduce-title"><img src = "image/main_questionTitle.svg"></div>
+                <div class = "introduce-textbox-group">
+                    <div class = "introduce-textbox">
+                        <b>다음 만남이 기다려지는, '만나면 즐거운 디자이너' 황현우 입니다.</b>
+                        <br><br>좋은 프로덕트는 즐거운 협업에서 시작된다고 생각합니다. 저는 다양한 직무능력을 통해, 즐거운 협업 속에서 클라이언트와 기획자, 개발자를 이해하고 공감하며 존중하여 원활한 소통을 이끌어 좋은 프로덕트를 만드는 시작점을 만들 수 있는 디자이너입니다. 클라이언트와 기획자가 원하고자 하는 것에 집중하여, 더 좋은 방향으로 이끌고, 웹 개발 능력으로 개발자와 소통하여, 불협화음 없는 디자인을 수행할 수 있는 능력을 갖췄습니다.
+                        저는 UX/UI 디자이너로써, 클라이언트가 다음 미팅을 기대하게 하고, 개발자가 이슈에 대한 내용을 같이 논의하고 싶어 하며, 기획자가 방금 떠올린 아이디어를 공유하고 싶어 하는, 다음 만남이 기다려지는 디자이너가 되겠습니다.
+
+                        <br><br><br><br><b>즐거운 경험을 탐구합니다.</b>
+                        <br><br>저는 UX/UI 디자인에서 ‘즐거운 경험’을 가장 중시합니다.
+                        학부 시절, 뚜렷한 가치관 없이 과제만 수행하던 중, 우연히 점묘화를 바탕으로 이미지 트렌드를 보여주는 인터랙티브 웹사이트를 접하게 되었습니다. 점묘화라는 비주얼 컨셉으로 클릭이나, 마우스 커서의 움직임을 통해 멋진 애니메이션을 발생시키는 인터랙션은 평소 칼럼형 웹사이트만 접하던 제게 색다른 매력으로 다가왔습니다. 이 경험을 통해 사용자에게 여러 가지 경험을 제공할 수 있는 UX 디자인 분야에 흥미를 느끼고, “사용자에게 즐거운 경험을 제공하는 디자인을 하자” 라는 가치관을 세울 수 있었습니다. 이후 저는 즐거운 경험을 제공하는 디자인을 실현하기 위해, UX/UI 디자인과 프로그래밍(HTML, CSS, jQuery,  유니티 등) 모션그래픽 디자인 능력을 익혀 폭넓은 경험을 제공하는 디자인을
+                        할 수 있도록 노력하였습니다.
+                    </div>
+
+                    <div class = "introduce-textbox2">
+                        <b>저는 이런 경험을 했고, 이것을 잘합니다.</b>
+                        <br><br>2022년 7월 6일 ~ 8월 26일까지 , 웹 에이전시에서 인턴 근무하여, UX/UI 디자인 업무를 수행하였습니다.
+                        주로 Adobe XD를 이용하여 UX/UI 기획 및 디자인 직무를 수행하였으며, 모션그래픽, 브랜드 로고 개발 능력을 인정받아
+                        병행하여 수행하였습니다.
+
+                        <br><br><b>문제를 발견하고, 이를 명확하게 제시하여 설득하는 능력</b>
+                        <br><br>공공기관에서 제시한 기획서를 바탕으로 웹사이트의 와이어 프레임 디자인을 수행하던 중, 기획서 내에 IA 구조가 사용자가 여러 페이지를 거쳐야 원하는 정보를 얻을 수 있는 구조였습니다. 이러한 IA 구조는 사용자의 재방문율을 떨어트리고, 부정적인 경험을 제공한다는 문제를 발견하고 이를 명확하게 설명하기 위해 해당 IA 구조를 가진 웹사이트들과 재방문율이 높은 웹사이트들을 비교 분석하여, 개선된 IA 구조와 와이어 프레임을 제시한 결과, 해당 내용이 채택되어 좋은 결과를 만들어내었습니다. 이런 경험을 통해, 디자인을 논리적으로 설명할 수 있는
+                        능력을 함양할 수 있었습니다.
+
+                        <br><br><b>다양한 경험을 제공할 수 있는 역량</b>
+                        <br><br>Adobe After Effects를 활용한 모션그래픽 디자인 능력을 회사에서 인정받아, 전자제품 추천 및 매장소개를 주요 기능으로 하는 애플리케이션의 홍보영상 디자인 업무를 수행하였습니다. 자칫 지루할 수 있는 애플리케이션 소개 영상을 애플리케이션 내 캐릭터 그래픽을 활용하여, 앱을 사용하는 주 대상층들이 가지고 있는 궁금점들을 조사하여 캐릭터가 애플리케이션의 기능을 통해 해결이 가능하다는 내용을 중심으로
+                        3분가량의 모션그래픽 영상을 디자인하였습니다. 짧은 기간이지만, 밀도 높은 직무 수행을 통해 협업 능력과 역량을 함양시킬 수 있었던
+                        경험이었다고 생각합니다. 이러한 경험과 능력들이 UX/UI 직무 수행에 큰 역량을 발휘할 수 있을 것으로 생각합니다.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class = "introduce-container2">
+                <div class = "title">
+
+                    <div class = "title-image" id = "mob">
+                        <img src = "image/main_title.svg">
+                    </div>
+
+                    <div class = "namecard-container">
+                        <div class = "namecard-title-group">
+                            <h3>황현우 Hyunwoo Hwnag</h3>
+                        </div>
+        
+                        <div class = "namecard-body-group">
+                            <div class = "sub3">E-mail</div>
+                            <div class = "body">hwtv1223@gmail.com</div>
+                        </div>
+        
+                        <div class = "namecard-body-group">
+                            <div class = "sub3">Instagram</div>
+                            <div class = "body">@haaeno</div>
+                        </div>
+        
+                        <div class = "namecard-body-group" id = "web">
+                            <div class = "sub3">Behance</div>
+                            <div class = "body">황 현우</div>
+                        </div>
+                    </div>
+
+                    <div class = "title-image" id="web">
+                        <div class = "namecard-profile">
+                            <img src = "image/profile.png">
+                        </div>
+                        <img src = "image/main_title.svg">
+                    </div>
+                </div>
+
+                <div class = "longcard-container">
+                    <div class = "longcard-group">
+                        <h3 id ="first">Education</h3>
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2017</div>
+                            <div class = "body2">울산달천고등학교 졸업</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2023</div>
+                            <div class = "body2">대구가톨릭대학교 디지털디자인과 졸업</div>
+                        </div>
+                    </div>
+
+                    <div class = "longcard-group">
+                        <h3>Activities</h3>
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2017-18</div>
+                            <div class = "body2">대구가톨릭대학교 디지털디자인과 학년대표</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2019</div>
+                            <div class = "body2">육군 제37 보병사단용 교육용 모션그래픽 제작</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2022</div>
+                            <div class = "body2">제 10회 대구가톨릭대학교 디지털디자인과 졸업전시회 “X10D” 졸업준비위원회 위원장</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2022 7-8</div>
+                            <div class = "body2">주식회사 소통파이브 (웹 에이전시) 인턴</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2023</div>
+                            <div class = "body2">HCI CREATIVE AWARD 캡스톤 디자인 전시 참여</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3"></div>
+                            <div class = "body2">대구가톨릭대학교 디지털디자인과/산업디자인과 행정조교</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3"></div>
+                            <div class = "body2">자격증 시험준비 서비스 “Qualk” BX/UX 디자이너 참여</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2024</div>
+                            <div class = "body2">반려동물 헬스케어 서비스 “HEDDY” BX/UX 디자이너 참여중</div>
+                        </div>
+                    </div>
+
+                    <div class = "longcard-group">
+                        <h3>Awards</h3>
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2019</div>
+                            <div class = "body2">제 9회 호국미술대전 특선</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2020</div>
+                            <div class = "body2">DXD AWARDS 2학년 우수작품 선정</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2021</div>
+                            <div class = "body2">DXD AWARDS 3학년 우수작품 선정</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2021</div>
+                            <div class = "body2">‘올해의 디디人 ’ 선정</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2022</div>
+                            <div class = "body2">제 11회 대구출판인쇄 디자인 공모전 특선</div>
+                        </div>
+
+                        <div class = "longcard-body-group">
+                            <div class = "sub3">2023</div>
+                            <div class = "body2">2023년 전반기 학위수여식 디지털디자인과 대표</div>
+                        </div>
+                    </div>
+
+                    <div class = "longcard-group" id = "last">
+                        <h3>Skill</h3>
+                        <div class="skill-group">
+                            <div class = "body3">
+                                Adobe Illustrator
+                                <br>Adobe Photoshop
+                                <br>Adobe After Effects
+                                <br>Adobe Indesign
+                                <br>Adobe XD
+                            </div>
+
+                            <div class = "body3">
+                                Figma
+                                <br>Unity Bolt
+                                <br>Arduino
+                                <br>Logic Pro X
+                                <br>html / css / JQuery
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        
+        
+    </body>
+</html>

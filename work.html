@@ -1,0 +1,428 @@
+<html>
+    <html>
+    <head>
+        <title>2024 Enjoy Designer HAENO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="work.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="jquery.easing.min.js"></script>
+        <script>
+            (function(d) {
+              var config = {
+                kitId: 'okh1uhz',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
+        
+    </head>
+
+    <script>
+        $(window).resize(function(){
+            var winWidth = $(window).width();
+            var boxWidth = $('.thum-pad').width();
+            var boxWidthUx = $('.thum-mob-ux').width();
+            var boxWidthBx = $('.thum-mob-bx').width();
+            var boxWidthMo = $('.thum-mob-mo').width();
+            var boxWidthMu = $('.thum-mob-mu').width();
+
+            if(winWidth <= 1320){
+                $('.thum-pad').height(boxWidth*1);
+            }
+
+            if(winWidth <= 768){
+                $('.thum-mob-ux').height(boxWidthUx*1);
+                $('.thum-mob-bx').height(boxWidthBx*1);
+                $('.thum-mob-mo').height(boxWidthMo*1);
+                $('.thum-mob-mu').height(boxWidthMu*1);
+            }
+        });
+
+        $(document).ready(function(){
+            $('#wux').hide();
+            $('#wux1').hide();
+            $('#wux2').hide();
+            $('#wbx').hide();
+            $('#wbx2').hide();
+            $('#wmo').hide();
+            $('#wmo2').hide();
+            $('#wmu').hide();
+            $('#wux').show(600,'easeOutExpo');
+            $('#wux1').show(300,'easeOutExpo');
+            $('#wux2').show(500,'easeOutExpo');
+            $('#wbx').show(200,'easeOutExpo');
+            $('#wbx2').show(500,'easeOutExpo');
+            $('#wmo').show(700,'easeOutExpo');
+            $('#wmo2').show(200,'easeOutExpo');
+            $('#wmu').show(500,'easeOutExpo');
+            $('.toast-message').animate({bottom:'40px'},1000,'easeInOutBack');
+            $('.toast-message').delay(7000).animate({bottom:'-200px'},1000,'easeInOutBack');
+        });
+            
+    </script>
+
+    <style>
+        body::-webkit-scrollbar {
+            width: 4px;  /* 스크롤바의 너비 */
+        }
+
+        body::-webkit-scrollbar-thumb {
+            height: 30%; /* 스크롤바의 길이 */
+            background: #000000; /* 스크롤바의 색상 */ 
+            border-radius: 10px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.15);  /*스크롤바 뒷 배경 색상*/
+        }
+
+
+
+        *{
+            /* box-shadow: 0 0 0 1px red inset; */
+            text-decoration: none;
+        }
+
+        a:visited{
+            color:black;
+        }
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: pretendard, sans-serif;
+            font-style: normal;
+        }
+
+        .logo {
+            position: relative;
+            width: auto;
+            height: 32px;
+            /* box-shadow: 0 0 0 1px red inset; */
+
+        }
+
+        .logo img {
+            height:100%;
+        }
+
+        .header-container{
+            /* box-shadow: 0 0 0 1px red inset; */
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 1320px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            z-index: 10;
+        }
+
+        #mob-logo{
+            display: none;
+        }
+
+        .navigator-title{
+            display: flex;
+            justify-content: end;
+            /* box-shadow: 0 0 0 1px red inset; */
+            width: 100%;
+            height: fit-content;
+            padding: 0;
+            margin-left: 20px;
+            margin-right: 0px;
+            padding-right: 20px;
+            border-right: solid 2px black;
+        }
+
+        .subTitle{
+            /* box-shadow: 0 0 0 1px red inset; */
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        .subTitle:hover{
+            color : #ff4000
+        }
+
+        .navigator{
+            display: flex;
+        }
+
+        .subTitle-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* box-shadow: 0 0 0 1px red inset; */
+            height: 24px;
+            width: 24px;
+            margin-left: 20px;
+        }
+
+        .subTitle-image img {
+            /* box-shadow: 0 0 0 1px red inset; */
+            width:100%;
+        }
+
+        #be img{
+            width:135%;
+        }
+
+
+        @media all and (max-width: 1320px){
+            *{
+                /* box-shadow: 0 0 0 1px blue inset; */
+                text-decoration: none;
+            }
+
+            .header-container{
+                width:100%;
+            }
+
+            .logo{
+                margin-left: 40px;
+            }
+
+            .navigator{
+                margin-right: 40px;
+            }
+
+        }
+
+        @media all and (max-width: 768px){
+            *{
+                /* box-shadow: 0 0 0 1px blue inset; */
+                text-decoration: none;
+            }
+            .header-container{
+                width:100%;
+            }
+
+            .logo{
+                margin-left: 20px;
+            }
+
+            .navigator{
+                margin-right: 20px;
+            }
+
+
+
+            .navigator-title{
+                justify-content:flex-start;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-right: 20px;
+                border-right: solid 0px black;
+            }
+
+            #pc-logo{
+                display: none;
+            }
+
+            #mob-logo{
+                display: block;
+            }
+
+            .toast-message{
+                min-width: 312px;
+                font-size: 12px;
+            }
+
+
+
+        }
+
+    </style>
+
+
+    <body>
+        <div class = "header-container">
+            <a class = "logo" href="index.html" id = "pc-logo"><img src = "image/logo.svg"></a>
+            <a class = "logo" href="index.html" id = "mob-logo"><img src = "image/mob-logo.svg"></a>
+
+            <div class = "navigator-title">
+                <a class = "subTitle" href = "about.html">ABOUT</a>
+                <a class = "subTitle" href = "work.html">WORK</a>
+            </div>
+
+            <div class = "navigator">
+                <a class = "subTitle-image" href = "https://www.behance.net/hwtv122310e3" id = "be"><img src = "image/behance.webp"></a> 
+                <a class = "subTitle-image" href = "https://www.instagram.com/haaeno/"><img src = "image/insta.png"></a>
+            </div>
+        </div>
+
+        <div class = "toast-message">
+            <div class = "icon"><img src = "image/information.svg"></div>
+            작업물이 보이지 않는다면, 웹사이트 사이즈를 줄이거나 늘려보세요.
+        </div>
+
+        <main>
+            <div class = "thum-con">
+                <a href="https://www.behance.net/gallery/203298859/STEPBY-UXUI-Design-BX-Design" class = "thum-big" id = "wux" >
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">UX / UI</div>
+                    </div>
+                    <img src = "image/thum_stepby.jpg">
+                </a>
+
+                <div class = "thum-group">
+                    <a href="https://www.behance.net/gallery/208400753/-On-Mu-Bang-Brand-Experience-Design" class = "thum" id = "wux1">
+                        <img src = "image/thum_onmubang.jpg">
+                        <div class = "tag-con">
+                            <div class = "tag" id = "s">BX / BI</div>
+                        </div>
+                    </a>
+
+                    <a href= "https://www.behance.net/gallery/208410999/Studio-Wagglez-Social-Music-Community-Service" class = "thum" id = "wux2">
+                        <img src = "image/thum_wagglez.jpg">
+                        <div class = "tag-con">
+                            <div class = "tag" id = "sb">UX / Interaction</div>
+                            
+                        </div>
+                    </a>
+                    <a href = "https://www.behance.net/gallery/210341523/-Motion-Graphic" class = "thum" id = "wbx">
+                        <img src = "image/thum_school.jpg">
+                        <div class = "tag-con">
+                            <div class = "tag" id = "s">Motion</div>
+                        </div>
+                    </a>
+                    <a href = "https://www.behance.net/gallery/210137975/HIXX-Motion-Graphic-Teaser-CRUSH"class = "thum" id = "wbx2">
+                        <img src = "image/thum_hixx.jpg">
+                        <div class = "tag-con">
+                            <div class = "tag" id = "s">Motion</div>
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <div class = "thum-mid-group">
+
+
+                    <a href="daegu.html" class = "thum-mid" id = "wmo">
+                        <img src = "image/thum_daegu.jpg">
+                        <div class = "tag-con">
+                            <div class = "tag" id = "w">BI</div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 패드 아이템들 -->
+
+            <div class = "thum-pad-con">
+                <a href="https://www.behance.net/gallery/203298859/STEPBY-UXUI-Design-BX-Design" class = "thum-pad" id = "wagglez"> 
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">UX / UI</div>
+                    </div>
+                    <img src = "image/thum_stepby.jpg">
+                </a>
+
+
+                <a href="https://www.behance.net/gallery/208400753/-On-Mu-Bang-Brand-Experience-Design" class = "thum-pad" id = "mom">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">BX / BI</div>
+                    </div>
+                    <img src = "image/thum_onmubang.jpg">
+                </a>
+
+            </div>
+
+            <div class = "thum-pad-con">
+
+                <a href = "https://www.behance.net/gallery/208410999/Studio-Wagglez-Social-Music-Community-Service" class = "thum-pad" id = "step">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">UX / Interaction</div>
+                    </div>
+                    <img src = "image/thum_wagglez.jpg">
+                </a>
+
+
+                <a href="https://www.behance.net/gallery/210341523/-Motion-Graphic" class = "thum-pad" id = "onmubang">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">Motion</div>
+                    </div>
+                    <img src = "image/thum_school.jpg">
+                </a>
+
+            </div>
+
+            <div class = "thum-pad-con">
+
+                <a href="https://www.behance.net/gallery/210137975/HIXX-Motion-Graphic-Teaser-CRUSH" class = "thum-pad" id = "daegu">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">Motion</div>
+                    </div>
+                    <img src = "image/thum_hixx.jpg">
+
+                </a>
+
+                <a href="daegu.html" class = "thum-pad" id = "school">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "w">BI</div>
+                    </div>
+                    <img src = "image/thum_daegu.jpg">
+
+                </a>
+            </div>
+
+            <!-- 모바일 아이템들 -->
+            <div class = "thum-mob-con">
+                <a href="https://www.behance.net/gallery/203298859/STEPBY-UXUI-Design-BX-Design" class = "thum-mob-ux">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">UX / UI</div>
+                    </div>
+                    <img src = "image/thum_stepby.jpg">
+                </a>
+
+                <a href="https://www.behance.net/gallery/208400753/-On-Mu-Bang-Brand-Experience-Design" class = "thum-mob-ux">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">BX / BI</div>
+                    </div>
+                    <img src = "image/thum_onmubang.jpg">
+                </a>
+
+                <a href="https://www.behance.net/gallery/208410999/Studio-Wagglez-Social-Music-Community-Service" class = "thum-mob-ux">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">UX / Interaction</div>
+                    </div>
+                    <img src = "image/thum_wagglez.jpg">
+                </a>
+
+                <a href="https://www.behance.net/gallery/210341523/-Motion-Graphic" class = "thum-mob-bx">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">Motion</div>
+                    </div>
+                    <img src = "image/thum_school.jpg">
+                </a>
+
+                <a href="https://www.behance.net/gallery/210137975/HIXX-Motion-Graphic-Teaser-CRUSH" class = "thum-mob-bx">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "s">Motion</div>
+                    </div>
+                    <img src = "image/thum_hixx.jpg">
+                </a>
+
+                <a href="daegu.html" class = "thum-mob-mo">
+                    <div class = "tag-con">
+                        <div class = "tag" id = "w">BI</div>
+                    </div>
+                    <img src = "image/thum_daegu.jpg">
+                </a>
+            </div>
+
+            
+
+
+        </main>
+    </body>

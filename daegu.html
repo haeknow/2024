@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>2024 Enjoy Designer HAENO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="jquery.easing.min.js"></script>
+
+        <script>
+            (function(d) {
+              var config = {
+                kitId: 'okh1uhz',
+                scriptTimeout: 3000,
+                async: true
+              },
+              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+          </script>
+    </head>
+
+    <style>
+        a{
+            text-decoration: none;
+        }
+
+        a:visited{
+            color:black;
+        }
+
+        a:hover{
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: "pretendard", sans-serif;
+        }
+
+        .header-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px 0 20px;
+            background-color: #ffffff;
+            /* border:solid 1px red; */
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            z-index: 1;
+            height: 64px;
+        }
+
+        .logo-group{
+            position: relative;
+            /* border:solid 0.1px red; */
+            width:166px;
+            height:32px;
+        }
+
+        .logo{
+            position: absolute;
+            width:166px;
+            height:32px;
+            /* border: solid 0.1px red; */
+        }
+
+        #mob-logo{
+            display: none;
+        }
+
+        .logo img{
+            height: 100%;
+            width: auto;
+        }
+
+        .logo img{
+            height: 100%;
+        }
+
+        .navigator{
+            display: flex;
+            align-items: center;
+            /* border: solid 0.1px red; */
+        }
+
+        .navigator-title{
+            position: relative;
+            left: 20px;
+            display: flex;
+            justify-content: end;
+            width:100%;
+            margin:40px;
+            align-items: center;
+            /* border: solid 0.1px red; */
+        }
+
+        .subtitle{
+            font-family: "pretendard", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .subtitle-image{
+            width:40px;
+            height:40px;
+            margin-left: 4px;
+            /* border: solid 0.1px red; */
+            opacity: 50%;
+        }
+
+        .subtitle-image img{
+            width:100%;
+        }
+
+        #insta img{
+            position: relative;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width:55%;
+            /* border: solid 0.1px red; */
+        }
+
+        .subtitle-image:hover{
+            opacity: 100%;
+        }
+
+        .pannel{
+            display: block;
+            position: relative;
+            width: 80vw;
+            height: auto;
+            left:50%;
+            transform: translateX(-50%);
+            top:80px;
+            margin:0px;
+            border: solid 1px #404040;
+        }
+
+        .pannel img{
+            width:100%;
+        }
+
+        @media all and (max-width: 1320px) {
+            body{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        @media all and (max-width: 1024px){
+            #pc-logo{
+                display: none;
+            }
+
+            #mob-logo{
+                display: block;
+            }
+
+            .logo-group{
+                width:32px;
+                /* border:solid 0.1px red; */
+            }
+
+            .navigator-title{
+                justify-content:flex-start;
+
+            }
+        }
+
+    </style>
+
+    <div class = "header-container">
+        <div class = "logo-group">
+            <a class = "logo" href="index.html" id = "pc-logo"><img src = "image/logo.svg"></a>
+            <a class = "logo" href="index.html" id = "mob-logo"><img src = "image/mob-logo.svg"></a>
+        </div>
+
+        <div class = "navigator-title">
+            <a class = "subTitle" href = "about.html">About</a>
+            <a class = "subTitle" href = "work.html">Work</a>
+        </div>
+
+        <div class = "navigator">
+            <a class = "subTitle-image" href = "https://www.behance.net/hwtv122310e3"><img src = "image/behance.webp"></a> 
+            <a class = "subTitle-image" href = "https://www.instagram.com/haaeno/" id="insta"><img src = "image/insta.png"></a>
+        </div>
+    </div>
+
+    <body>
+        <div class = "pannel">
+            <img src="image/daegu_p.jpg">
+        </div>
+    </body>
+</html>

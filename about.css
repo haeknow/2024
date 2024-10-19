@@ -1,0 +1,388 @@
+
+*{
+    /* box-shadow: 0 0 0 1px red inset; */
+    text-decoration: none;
+}
+
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+
+body {
+    margin: 0;
+    padding:0;
+    font-family: "pretendard", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+main{
+    position: relative;
+    top:260px;
+    width:1320px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.introduce-container{
+    position: relative;
+}
+
+.introduce-title{
+    width:424px;
+    height: auto;
+}
+
+.introduce-title img{
+    width:100%;
+    height: auto;
+}
+
+.introduce-textbox-group{
+    position: relative;
+    top:100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduce-textbox{
+    width:534px;
+    padding-right: 68px;
+    border-right: solid 1px #e4e4e4;
+}
+
+.introduce-textbox2{
+    width:648px;
+}
+
+.introduce-container2{
+    display: flex;
+    position: relative;
+    top:200px;
+    justify-content: space-between;
+    margin-bottom: 600px;
+}
+
+.title{
+    position: relative;
+    width: 312px;
+}
+
+.title-image{
+    position: absolute;
+    bottom: 0;
+    width:312px;
+    height: auto;
+}
+
+.title-image img{
+    width:100%;
+}
+
+.namecard-container{
+    position: absolute;
+    top:0;
+}
+
+.namecard-profile{
+    width:100%;
+}
+
+.namecard-profile img{
+    width:100%;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    /* margin-top: 16px; */
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-bottom: 16px;
+}
+
+.body2{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.body3{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+    padding-right: 80px;
+    line-height: 220%;
+}
+
+.sub2 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    width:75px;
+}
+
+.sub3 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    width:90px;
+}
+
+.namecard-body-group{
+    display: flex;
+}
+
+.longcard-container{
+    position: relative;
+    width:648px;
+    /* box-shadow: 0 0 0 1px red inset; */
+    padding: 0;
+    margin: 0;
+}
+
+.longcard-group{
+    /* box-shadow: 0 0 0 1px red inset; */
+    width:100%;
+    margin-bottom: 64px;
+}
+
+.longcard-body-group{
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.skill-group{
+    display: flex;
+    /* box-shadow: 0 0 0 1px red inset; */
+}
+
+#first{
+    margin-top: 0;
+}
+
+#last{
+    margin-bottom: 0;
+}
+
+#mob{
+    display: none;
+}
+
+@media all and (max-width: 1320px){
+    *{
+        /* box-shadow: 0 0 0 1px blue inset; */
+        text-decoration: none;
+    }
+
+   
+    main{
+        top:160px;
+        width:100%;
+        /* box-shadow: 0 0 0 1px blue inset; */
+    }
+
+
+    .introduce-title{
+        margin-left: 40px;
+        /* box-shadow: 0 0 0 1px blue inset; */
+    }
+
+
+    .introduce-textbox{
+        width:100%;
+        padding-right: 40px;
+        border-right: none;
+        margin-left: 40px;
+    }
+    
+    .introduce-textbox2{
+        width:100%;
+        padding-left: 40px;
+        margin-right: 40px;
+    }
+
+
+    .title{
+        position: relative;
+        width: 100%;
+        margin-left: 40px;
+        padding-right: 40px;
+        /* box-shadow: 0 0 0 1px blue inset; */
+    }
+
+    .longcard-container{
+        /* box-shadow: 0 0 0 1px blue inset; */
+        width:100%;
+        padding-left: 40px;
+        margin-right: 40px;
+    }
+
+    #web{
+        display: none;
+    }
+
+    #mob{
+        display: block;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .namecard-container{
+        position: relative;
+    }
+
+
+
+
+
+
+}
+
+@media all and (max-width: 1024px) {
+    
+    .longcard-body-group{
+        display: block;
+    }
+}
+
+@media all and (max-width: 768px) {
+    *{
+        /* box-shadow: 0 0 0 1px red inset; */
+        text-decoration: none;
+    }
+
+   
+    main{
+        top:100px;
+        /* box-shadow: 0 0 0 1px blue inset; */
+        width: 100%;
+    }
+
+    .introduce-title{
+        margin-left: 0px;
+        /* box-shadow: 0 0 0 1px blue inset; */
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .introduce-title img{
+        width: 100%;
+
+    }
+
+    .introduce-textbox-group{
+        /* box-shadow: 0 0 0 1px blue inset; */
+        display: block;
+        justify-content: baseline;
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .introduce-textbox{
+        /* box-shadow: 0 0 0 1px blue inset; */
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .introduce-textbox2{
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+
+    .introduce-container2{
+        /* box-shadow: 0 0 0 1px blue inset; */
+        display: block;
+        width: 100%;
+        margin-bottom: 400px;
+    }
+
+    .title{
+        /* box-shadow: 0 0 0 1px red inset; */
+        margin: 0;
+        padding: 0;
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .title-image{
+        /* box-shadow: 0 0 0 1px blue inset; */
+        width: 70vw;
+    }
+
+    .namecard-container{
+        /* box-shadow: 0 0 0 1px blue inset; */
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .longcard-container{
+        /* box-shadow: 0 0 0 1px blue inset; */
+        width: auto;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+    }
+
+    .longcard-group{
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+        /* box-shadow: 0 0 0 1px blue inset; */
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
+    }
+
+    .longcard-body-group{
+        /* box-shadow: 0 0 0 1px blue inset; */
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .skill-group{
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .sub3{
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .body2{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .body3{
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
